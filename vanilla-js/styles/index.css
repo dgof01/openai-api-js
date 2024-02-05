@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #272727;
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prompt-container {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-input, .prompt-btn {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.prompt-btn {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.clear-btn {
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.prompt-btn:hover, .clear-btn:hover {
+    opacity: .5;
+}
+
+.prompt-textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.output-text {
+    width: 650px;
+    background-color: #1e1e1e;
+    padding: .25rem .5rem;
+}
+
+.transition {
+    transition: .35s all ease-in-out;
+}
+
+.hidden {
+    display: none;
+}

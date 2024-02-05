@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <title>Openai API - JS | DG Tutorial</title>
+</head>
+<body>
+    <main>
+        <div class="prompt-container">
+            <h1 class="title">
+                Write your prompt
+            </h1>
+            <form id="prompt-form">
+                <div class="prompt-input">
+                    <label for="prompt">Prompt:</label>
+                    <textarea class="prompt-textarea" id="prompt" name="prompt" required rows="10" cols="70"></textarea>
+                </div>
+                <button type="submit" class="prompt-btn transition">Generate</button>
+            </form>
+            <div class="output-container">
+                <p>Output:</p>
+                <div class="output-text">
+                    <p id="output"></p>
+                </div>
+                <button id="clear-btn" class="clear-btn transition hidden">Clear</button>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./scripts/index.js" ></script>
+</body>
+</html>
